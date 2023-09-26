@@ -1,0 +1,213 @@
+/* Bootstrap styling and new CSS */
+.navbar {
+    background-color: #D9D9D9;
+    box-shadow: 0.7vw 0.7vw black;
+    margin-top: 1vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: black;
+    font-weight: bold;
+    margin: 0 10px;
+    text-transform: uppercase;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #F495BE;
+    background-color: #aedeea;
+}
+
+#login:hover {
+    color: #aedeea;
+    background-color: #FAF28A;
+}
+
+.navbar-toggler-icon {
+    background-color: black;
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    color: #F495BE;
+}
+
+.slider-container {
+    margin: 1vw;
+}
+
+.sliderImage {
+    height: 1fr;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    margin-right: 10px;
+    border: 0.5vw solid #ffffff;
+}
+
+.tns-controls {
+    display: flex;
+    justify-content: center;
+}
+
+.tns-controls button {
+    font-family: 'Oswald', sans-serif;
+    background-color: transparent;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-bottom: 0.5vw;
+    margin-top: 0.5vw;
+}
+
+.tns-controls button:hover {
+    background-color: #FAF28A;
+    color: #F495BE;
+    cursor: pointer;
+}
+
+/* Old CSS */
+html {
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    background-color: #F495BE !important;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 2vw;
+    margin: 2vw;
+    padding: 0;
+}
+
+.featureToggle {
+    opacity: 0;
+}
+
+.imageWrapper,
+.rightBody,
+#homeButton,
+form {
+    box-shadow: 0.7vw 0.7vw black;
+    background-color: #D9D9D9;
+}
+
+.rightBody {
+    margin-bottom: 3vw;
+}
+
+.imageWrapper {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    border: 0.5vw solid #ffffff;
+    background-color: #ffffff;
+    margin-bottom: 3vw;
+}
+
+.sideImage {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 100%;
+    height: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2vw;
+    color: black;
+}
+
+.text {
+    text-align: justify;
+    color: black;
+    padding: 1vw;
+}
+
+#registrationBody {
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-rows: 1fr 10fr 1fr;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 25%;
+    font-size: 20px;
+    gap: 1vw;
+    padding: 2vw;
+}
+
+form input[type="submit"] {
+    align-self: center;
+    font-weight: bold;
+    font-size: large;
+    padding: 1vw;
+    margin-top: 1vw;
+    width: fit-content;
+    background-color: black;
+    color: white;
+    border: none;
+}
+form input[type="submit"]:hover {
+    background-color: #FAF28A;
+    color: #aedeea;
+}
+
+.homeButtonContainer {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+#homeButton {
+    padding: 5px;
+    width: 5vw;
+    height: 5vw;
+    min-width: 40px;
+    min-height: 40px;
+    margin: 2vw;
+}
+#homeButton:hover {
+    background-color: #FAF28A;
+}
+
+.errorContainer {
+    display: flex;
+    background-image: url(assets/static500.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media only screen and (min-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr 4fr;
+    }
+
+    .text {
+        column-count: 2;
+    }
+
+    .form {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .text::after {
+        content: "😔";
+        position: relative;
+        width: 100%;
+        background-color: black;
+        color: white;
+    }
+}

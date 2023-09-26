@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+        <link rel="stylesheet" href="page.css">
+        <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+        <title>YESTERYEAR Browser</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+            <div class="container-fluid">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="">A</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">B</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">C</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">D</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container-fluid">
+                <a class="navbar-brand mx-auto" href="#">YESTERYEAR BROWSER</a>
+            </div>
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="register.html" id="register">REGISTER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html" id="login">LOGIN</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="grid">
+            <div class="images">
+                <div class="imageWrapper">
+                    <img src="assets/flower.jpg" alt="" class="sideImage">
+                </div>
+                <div class="imageWrapper">
+                    <img src="assets/sky.jpg" alt="" class="sideImage">
+                </div>
+                <div class="imageWrapper">
+                    <img src="assets/shoes.jpg" alt="" class="sideImage">
+                </div>
+            </div>
+
+            <div class="rightBody">
+                <div class="slider-container">
+                    <div class="slider">
+                        <img src="assets/blurry1.jpg" alt="Image 1" class="sliderImage">
+                        <img src="assets/blurry2.jpg" alt="Image 2" class="sliderImage">
+                        <img src="assets/blurry3.jpg" alt="Image 3" class="sliderImage">
+                        <img src="assets/blury4.jpg" alt="Image 4" class="sliderImage">
+                        <img src="assets/blury5.jpg" alt="Image 5" class="sliderImage">
+                        <img src="assets/blurry6.jpg" alt="Image 6" class="sliderImage">
+                    </div>
+                </div>
+                <div class="text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Proin id elit leo. Quisque aliquam sapien ligula, vulputate sagittis felis feugiat nec.
+                    Donec ac libero eleifend, porttitor tortor vitae, efficitur mi. Aenean porttitor ligula quis aliquet
+                    faucibus.
+                    Etiam et placerat magna, at scelerisque neque. Sed id ipsum at elit vulputate tempus.
+                    Nullam lacinia ac massa vel lacinia. Maecenas ultrices nunc et mattis accumsan.
+                    Nulla pharetra ac risus vitae porttitor. Cras placerat nunc sed finibus pulvinar.
+                    Ut hendrerit orci eu malesuada tristique. Morbi hendrerit malesuada tortor sit amet iaculis. Nunc eu
+                    porta dui.
+    
+                    Pellentesque eu eros ut ligula consequat luctus eu id ipsum. Phasellus facilisis quam sit amet arcu
+                    euismod suscipit.
+                    Proin vitae dui iaculis, lobortis mauris nec, blandit nibh. Sed sit amet efficitur sem.
+                    Pellentesque in mauris dolor. Fusce non tortor mollis est posuere elementum.
+                    Nam faucibus mi nec enim tempor, ac efficitur mauris lacinia. Etiam sit amet euismod velit.
+                    Donec volutpat ultrices finibus. Vestibulum sed vulputate nisi.
+                    Etiam quam erat, dictum vitae arcu id, interdum mattis metus.
+                    Vestibulum diam felis, dapibus ut mattis vitae, venenatis ac nibh.
+                    Proin hendrerit purus a volutpat finibus. Sed quis leo vehicula dolor molestie ullamcorper ut vitae
+                    neque.
+                </div>
+                <table><!-- Some content will live here. --></table>
+            </div>
+        </div>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script>
+            var slider = tns({
+                container: '.slider',
+                items: 2,
+                "center": true,
+                "mouseDrag": true,
+                "swipeAngle": false,
+                "speed": 400,
+                nav: false
+            });
+        </script>
+
+    </body>
+</html>
