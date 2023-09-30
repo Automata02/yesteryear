@@ -9,21 +9,23 @@
     <link rel="stylesheet" href="page.css">
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-    <link href="">
 </head>
 
-<body id="registrationBody" class="errorContainer">
-    <div class="homeButtonContainer">
-        <a href="index.html" class="navButton">
-            <img src="assets/home.svg" alt="" id="homeButton">
-        </a>
-    </div>
-    <div class="form">
-        <form action="">
-            <input type="submit" value="404 Page not Found" id="error">
-        </form>
-    </div>
+<body>
+    <a href="index.html" class="nav-item">
+        <img src="assets/home.svg" alt="" class="nav-link" id="homeButton">
+    </a>
+    <form>
+        <div class="card text-center">
+            <div class="card-body">
+                <h5 class="card-title">404 Page not found</h5>
+                <p class="card-text">The requested URL wasn't found on this "server"</p>
+                <a href="javascript:void(0)" class="btn btn-primary" class="nav-link" id="errorButton">RETURN</a>
+            </div>
+        </div>
+    </form>
+    <script src="common.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
-
 </html>

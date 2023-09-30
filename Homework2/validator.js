@@ -10,6 +10,7 @@ const passwordWarning = document.getElementById('passwordWarning');
 const repeatPasswordWarning = document.getElementById('repeatPasswordWarning');
 const registerButton = document.getElementById('registerButton');
 
+
 function checkFormState() {
     if (
         emailInput.value.trim() !== '' &&
