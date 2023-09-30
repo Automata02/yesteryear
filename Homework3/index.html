@@ -28,6 +28,9 @@
                 <li class="nav-item">
                     <button class="btn btn-link nav-link" id="linkD">D</button>
                 </li>
+                <li class="nav-item">
+                    <button class="btn btn-link nav-link" id="linkNuclear">Nuclear Option</button>
+                </li>
             </ul>
         </div>
         <div class="container-fluid">
@@ -144,6 +147,16 @@
             </div>
         </div>
     </div>
+<div id="nuclearOptionDiv" style="display: none;">
+    <div id="artworkListView">
+        <ul id="artworkList"></ul>
+        <button id="loadMoreButton" class="btn btn-link nav-link">Load More</button>
+    </div>
+    <div id="artworkDetailView" style="display: none;">
+        <div id="artworkDetailContent"></div>
+        <button id="backToList" class="btn btn-link nav-link">Back to List</button>
+    </div>
+</div>
     <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -161,6 +174,7 @@
     </div>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="Nuclear.js"></script>
     <script src="SliderTaps.js"></script>
     <script>
         var slider = tns({
