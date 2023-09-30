@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link rel="stylesheet" href="page.css">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <title>YESTERYEAR Browser</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container-fluid">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <button class="btn btn-link nav-link" id="linkA">A</button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-link nav-link" id="linkB">B</button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-link nav-link" id="linkC">C</button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-link nav-link" id="linkD">D</button>
+                </li>
+            </ul>
+        </div>
+        <div class="container-fluid">
+            <a class="navbar-brand mx-auto" href="#">YESTERYEAR BROWSER</a>
+        </div>
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html" id="register">REGISTER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html" id="login">LOGIN</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="grid">
+        <div class="images">
+            <div class="imageWrapper">
+                <img src="assets/flower.jpg" alt="" class="sideImage">
+            </div>
+            <div class="imageWrapper">
+                <img src="assets/sky.jpg" alt="" class="sideImage">
+            </div>
+            <div class="imageWrapper">
+                <img src="assets/shoes.jpg" alt="" class="sideImage">
+            </div>
+        </div>
+
+        <div class="rightBody">
+            <div class="slider-container">
+                <div class="slider">
+                    <img src="assets/blurry1.jpg" alt="Image 1" class="sliderImage" data-id="1">
+                    <img src="assets/blurry2.jpg" alt="Image 2" class="sliderImage" data-id="2">
+                    <img src="assets/blurry3.jpg" alt="Image 3" class="sliderImage" data-id="3">
+                    <img src="assets/blury4.jpg" alt="Image 4" class="sliderImage" data-id="4">
+                    <img src="assets/blury5.jpg" alt="Image 5" class="sliderImage" data-id="5">
+                    <img src="assets/blurry6.jpg" alt="Image 6" class="sliderImage" data-id="6">
+                </div>
+            </div>
+            <div class="collapsible-content" id="contentA">
+                Hello!
+            </div>
+            <div class="collapsible-content" id="contentB">
+                Hi!
+            </div>
+            <div class="text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Proin id elit leo. Quisque aliquam sapien ligula, vulputate sagittis felis feugiat nec.
+                Donec ac libero eleifend, porttitor tortor vitae, efficitur mi. Aenean porttitor ligula quis aliquet
+                faucibus.
+                Etiam et placerat magna, at scelerisque neque. Sed id ipsum at elit vulputate tempus.
+                Nullam lacinia ac massa vel lacinia. Maecenas ultrices nunc et mattis accumsan.
+                Nulla pharetra ac risus vitae porttitor. Cras placerat nunc sed finibus pulvinar.
+                Ut hendrerit orci eu malesuada tristique. Morbi hendrerit malesuada tortor sit amet iaculis. Nunc eu
+                porta dui.
+
+                Pellentesque eu eros ut ligula consequat luctus eu id ipsum. Phasellus facilisis quam sit amet arcu
+                euismod suscipit.
+                Proin vitae dui iaculis, lobortis mauris nec, blandit nibh. Sed sit amet efficitur sem.
+                Pellentesque in mauris dolor. Fusce non tortor mollis est posuere elementum.
+                Nam faucibus mi nec enim tempor, ac efficitur mauris lacinia. Etiam sit amet euismod velit.
+                Donec volutpat ultrices finibus. Vestibulum sed vulputate nisi.
+                Etiam quam erat, dictum vitae arcu id, interdum mattis metus.
+                Vestibulum diam felis, dapibus ut mattis vitae, venenatis ac nibh.
+                Proin hendrerit purus a volutpat finibus. Sed quis leo vehicula dolor molestie ullamcorper ut vitae
+                neque.
+            </div>
+            <div class="tableContainer">
+                <div>
+                    <table id="contentD">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Food</td>
+                                <td>$200</td>
+                            </tr>
+                            <tr>
+                                <td>Data</td>
+                                <td>$150</td>
+                            </tr>
+                            <tr>
+                                <td>Rent</td>
+                                <td>$00</td>
+                            </tr>
+                            <tr>
+                                <td>Candles</td>
+                                <td>$3600</td>
+                            </tr>
+                            <tr>
+                                <td>Utilities</td>
+                                <td>$150</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">someone who is good at economy please help me budget this</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <button class="btn btn-link nav-link" id="calculateTotal">Calculate Total</button>
+                                    <button class="btn btn-link nav-link" id="sendMail">Send Email</button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="infoModalLabel">Image Info</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modalInfoContent">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="SliderTaps.js"></script>
+    <script>
+        var slider = tns({
+            container: '.slider',
+            items: 2,
+            "center": true,
+            "mouseDrag": true,
+            "swipeAngle": false,
+            "speed": 400,
+            nav: false
+        });
+    </script>
+</body>
+
+</html>
